@@ -37,6 +37,16 @@ class MemoryCollection implements CollectionInterface
     }
 
     /**
+     * Returns all elements of array
+     *
+     * {@inheritDoc}
+     */
+    public function getAll():array
+    {
+        return $this->data;
+    }
+
+    /**
      * {@inheritDoc}
      */
     public function set(string $index, $value)
@@ -57,7 +67,7 @@ class MemoryCollection implements CollectionInterface
      */
     public function count(): int
     {
-        return count($this->data) + 1;
+        return count($this->data);
     }
 
     /**

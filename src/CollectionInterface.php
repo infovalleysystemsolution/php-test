@@ -19,6 +19,13 @@ interface CollectionInterface
     public function get(string $index, $defaultValue = null);
 
     /**
+     * Returns all elements of array
+     *
+     * @return array
+     */
+    public function getAll():array;
+
+    /**
      * Adds a value to the collection
      *
      * @param string $index
@@ -44,8 +51,6 @@ interface CollectionInterface
 
     /**
      * Cleans the collection
-     *
-     * Estou aqui para testar sua atenção. Remova-me.
      *
      * @return void
      */
